@@ -31,30 +31,22 @@ p {
 	width: 80%;
 	text-align: justify;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
+}
+
+.HTML, .CSS, .attributes {
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.CSS, .attributes {
+	width: 70%;
+	margin: auto;
 }
 
 .history {
 	width: 50%;
-}
-
-.HTML{
-	padding-top: 30px;
-	padding-bottom:30px;
-	text-align: center;
-}
-
-.CSS {
-	width: 70%;
-	margin: auto;
-	text-align: center;
-}
-
-.attributes {
-	padding-bottom: 40px;
-	width: 70%;
-	margin: auto;
-	text-align: center;
 }
 
 table {
@@ -79,15 +71,13 @@ table, td, th {
 	padding: 10px;
 }
 
-
-#berners-lee{
+#berners-lee, #hakon{
 	height: 335px;
 	float: right;
+	padding-top: 15px;
 }
 
 #hakon {
-	height: 335px;
-	float: right;
 	padding-left: 60px;
 }
 

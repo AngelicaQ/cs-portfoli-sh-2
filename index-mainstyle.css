@@ -5,6 +5,7 @@ body{
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.3999996185303px;
+	padding-bottom: 40px;
 }
 
 h1 {
@@ -19,15 +20,11 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 45px;
+	padding-top: 30px;
 }
 
 p {
 	text-indent: 50px;
-}
-
-.all-info {
-	padding-top: 30px;
-	padding-bottom: 40px;
 }
 
 .who{
@@ -51,7 +48,6 @@ img {
 
 
 .favorite-artists {
-	width: 70%;
 	margin: auto;
 	text-align: center;
 }
