@@ -1,0 +1,84 @@
+body{
+	font-family: 'Josefin Sans';
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 53px;
+	letter-spacing: 2.5px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 45px;
+}
+
+p {
+	text-indent: 50px;
+	text-align: justify;
+}
+
+.all-information {
+	margin: auto;
+	width: 80%;
+	text-align: justify;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.HTML, .CSS, .attributes {
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.CSS, .attributes {
+	width: 70%;
+	margin: auto;
+}
+
+.history {
+	width: 50%;
+}
+
+table {
+	width: 47%;
+	float: right;
+	font-size: 90%;
+	margin-left: 50px;
+	margin-top: 105px;
+}
+
+td {
+	text-align: justify;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+}
+table, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+#berners-lee, #hakon{
+	height: 335px;
+	float: right;
+	padding-top: 15px;
+}
+
+#hakon {
+	padding-left: 60px;
+}
+
+/* replace the pictures that you already have and add the ones in the spaces that you need.*/

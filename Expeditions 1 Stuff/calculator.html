@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+	<title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+            <div id="navbar-content">
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="htmlcss.html">HTML/CSS</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="info_site.html">Info site</a></li>
+                    <li><a href="blank.html">Other Works</a></li>
+                </ul>
+            </div>
+<div id = "all">
+    <div id = "menu">
+        <input type ="text" name="input1" style="width:50px;" id="input1">
+        <select id="dropdown">
+            <option value="+">+ (addition)</option>
+            <option value="-">- (subtraction)</option>
+            <option value="x">x (multiplication)</option>
+            <option value="/">/ (division)</option>
+            <option value="%">% (modulus)</option>
+            <option value="^">^ (to the power of)</option>
+            //In addition to the four basic operations, my calculator also solves for remainders and exponents.
+            
+        </select>
+        <input type ="text" name="input2" style="width:50px;" id="input2">
+        <input type="button" value="Calculate" id="submitButton" />
+    
+        <p>The answer is: <span id="display"></span></p>
+        
+        <div id = "howTo">
+                <p>
+                    <br>How to Use the Calculator<br>
+                    Just in case some of you have never touched a calculator before (or if mine just looks really weird), 
+                    here's what you got to know: All that you have to do is choose two numbers. One of them goes into the first box, 
+                    and the other goes into the second box. Then just choose whatever operation you want to be done between them and 
+                    click the "Calculate" button for your answer. I know that this explanation seems pretty useless, but what are you going 
+                    to do about it? Math hurts the brain.
+                </p>
+        </div>
+</div>
+
+    <script src="calculator.js" ></script>
+</div>
+    <img src = "peanuts_math.jpg">
+</body>
+</html>
