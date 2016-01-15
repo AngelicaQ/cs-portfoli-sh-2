@@ -1,5 +1,7 @@
 // JavaScript File
 //All of these variables correspond to ID's listed in <div id = "info_site_information>."
+/*This makes it so that when they are defined in this file, they will display wherever they are 
+positioned in the HTML file.*/
 var heading = document.getElementById("heading");
 var item1 = document.getElementById("item1");
 var item2 = document.getElementById("item2");
@@ -9,14 +11,13 @@ var info1 = document.getElementById("info1");
 var info2 = document.getElementById("info2");
 var info3 = document.getElementById("info3");
 
-/*These are facts about the mantis shrimp. Like the rest of the information in 
-quotation marks, they will only be displayed if the user clicks on the information's 
-corresponding iamge.*/
-
 /*The <br />'s within the quotations create line breaks. Since the next information begins
 with the next ID. There is already a single line break. I wanted more space between the 
 two pieces of information, so I used a second <br />.*/
 
+/*These are facts about the mantis shrimp. Like the rest of the information in 
+quotation marks, they will only be displayed if the user clicks on the information's 
+corresponding iamge.*/
 item1.addEventListener("click", function(){
     heading.innerHTML = "<h2>The Mantis Shrimp</h2>"
     info1.innerHTML = "You see this little thing? This little tiny thing right here? This green little piece of trash and terror with the funny little eyes? Well, little buddy, it's called a mantis shrimp, and it's best known for being the physical manifestation of undersea terror and darkness. You think that I'm exaggerating, but no. No. <br /> <br />";
