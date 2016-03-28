@@ -1,4 +1,4 @@
-// JavaScript File
+// JavaScript Filese
 //All of these variables correspond to ID's listed in <div id = "info_site_information>."
 /*This makes it so that when they are defined in this file, they will display wherever they are 
 positioned in the HTML file.*/

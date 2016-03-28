@@ -46,14 +46,22 @@ body{
 	padding-right: 25px;
 	padding-top: 10px;
 	padding-bottom: 25px;
+	width: 30%;
 }
 
-img.index{
-	width: 30%;
+/*index{
+	width: 10%;
+}
+
+#index_artists{
 	float: left;
 	margin-left: 10px;
 	padding-bottom: 10px;
 }
+
+#index_artists{
+	width: 30%;
+}*/
 
 #index_favorite-artists{
 	margin: auto;
@@ -140,18 +148,26 @@ img.index{
 	padding-top: 30px;
 }
 
+/*This is about all the images as a whole.*/
 #info_site_images{
 	width: 70%;
-	padding-top: 30px;
-	margin-bottom: 7.5cm;
+	padding-top: 20px;
+	margin-bottom:30px;
 	margin-left: 30px;
+}
 
+/*This is about each individual image in this site.*/
+#info_image{
+	width:30%;
+	float:left;
+	padding-bottom:30px;
+	padding-right: 30px;
 }
 
 #item3{
-	padding-top: 10px;
-	clear: both;	
+	clear:left;
 }
+
 
 /*INSULT BUTTON*/
 /*--------------------------------------------------------*/
@@ -279,7 +295,20 @@ li{
 .vindinium_explanation_paragraph_break{
 	padding-bottom:40px;
 }
-/*The stylings for the HTML and CSS page begin here.*/
 
+/*CREEPY FRIEND SIMULATOR*/
+/*--------------------------------------------------------*/
 
+/*#creepy_filler_img{
+	height:600px;
+	margin-left: 50px;
+	padding-top:20px;
+	padding-bottom:40px;
+	padding-right:40px;
+	float:left;
+}
 
+#creepy_name{
+	padding-top:20px;
+	
+}*/
