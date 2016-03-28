@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="thing.css">
+        <title>This is a thing.</title>
+    </head>
+    <body>
+        <canvas id = "myCanvas"></canvas>
+
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            
+            var xPos = 0 < canvas.width;
+            var yPos = 0 <canvas.height;
+            var width = 25;
+            var height = 25;
+            
+            
+            context.rect(xPos, yPos, width, height);
+            context.stroke();
+            
+            function move(e){
+             //alert(e.keyCode);  
+             if(e.keyCode === 39){
+                 xPos += 10;
+                 //moves to the right
+             }
+             else if(e.keyCode === 37){
+                 xPos -= 10;
+                 //moves to the left
+             }
+             else if(e.keyCode === 40){
+                 yPos += 10;
+                 //moves up
+             }
+             else if(e.keyCode === 38){
+                 yPos -= 10;
+                 //moves down
+             }
+             
+             canvas.width=canvas.width;
+             context.rect(xPos, yPos, width, height);
+            context.stroke();
+            }
+            
+            document.onkeydown = move;
+        </script>
+    
+    </body>
+</html>

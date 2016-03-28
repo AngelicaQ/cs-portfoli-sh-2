@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <link rel="stylesheet" href="index-mainstyle.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+        <title>Vindinium Info</title>
+    </head>
+    <body>
+        <h1>Vindinium and Pain</h1>
+        <div id="navbar-content">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="htmlcss.html">HTML/CSS</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="info_site.html">Info site</a></li>
+                <li><a href="insult_generator.html">Insult</a></li>
+                <li><a href="vindinium_explanation.html">Vindinium</a></li>
+            </ul>
+        </div>
+
+        <div id = "vindinium_explanation_information">
+            
+            <div class="vindinium_explanation_paragraph_break">
+                <h2>What the hecky heck is Vindinium?</h2>
+                <img src = "vindinium explanation knights.png" id ="vindinium_explanation_knights_img">
+                <p>
+                    Well little children of the internet, vindinium is a game about those four little knight bot thingies 
+                    in the picture to the right. They&rsquo;re super cute and adorable, too. Look at them. They&rsquo;re tiny little things. 
+                    So smol. But hahahaha. No. no, being cute isn&rsquo;t what this game is about. You see, vindinium is a game where 
+                    these tiny little knights battle one another to have as many gold mines as possible, and whoever has the most 
+                    gold by the end of the game wins! There&rsquo;s a whole bunch of other things involved too, like shanking a bunch of 
+                    mine-guarding goblins, shanking your enemies (just a lot of shanking in general), and drinking a lot of beer to 
+                    rejuvenate your health. (How that works, I have no clue.)
+                    
+                    <br><br>But the most interesting part about this game is that you play by programming AI for your bot. You can write as 
+                    much code as you want to tell your bot to do certain things, so the whole game comes down to how good or bad you are 
+                    as both a programmer and a strategist. (Personally, I&rsquo;m terrible as both, but I&rsquo;ll get down to that later on.)
+                </p>
+                <hr>
+            </div>
+            
+            <div class="vindinium_explanation_paragraph_break">
+                <h2>But what are da rulez?</h2>
+                <p>
+                    Da rulez are as follows:
+                </p>
+                <ul id = "vindinium_explanation_rulez">
+                    <li>
+                        In the beginning of the game, all four players start off with 100 HP, 0 gold coins, and a limited amount of 
+                        turns to make for the game. (This number is typically 300 for each player.) The goal of this game is to have as 
+                        much gold as possible before all turns are completed, and the player with the most gold wins!
+                    </li>
+                    
+                    <li>
+                        All gold mines are guarded by a goblin that your bot must fight, and each battle decreases your bot&rsquo;s HP by 20. 
+                        If your bot manages to survive, the mine is now yours, and the goblin will continue to defend your gold from other 
+                        players. If your bot dies, you lose the mine and respawn, but you still keep your gold coins.
+                    </li>
+                    
+                    <li>
+                        Once your bot has a mine, it gains 1 more gold coin for every turn.
+                    </li>
+                    
+                    <li>
+                        Bots can fight one another for its mines, and if your bot is attacked, it loses 20 HP. If its health is depleted, 
+                        it respawns and loses all its mines to the winner, but again, it still keeps all its gold coins.
+                    </li>
+                    
+                    <li>
+                        In order to boost your bot&rsquo;s health, it can go to a tavern, buy some beer for 2 gold coins, and drink it to gain 50 HP.  
+                        However, it is not possible for your bot&rsquo;s HP to exceed 100.
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            
+            <div class="vindinium_explanation_paragraph_break">
+                <h2>My Bot&rsquo;s Global Data</h2>
+                <img src = "vindinium explanation richestEnemy code.png" id ="vindinium_explanation_img">
+                
+                
+                <p id = "vindinium_pre_image">
+                    Along with all the other really basic stuff that a bot needs to do, I thought that it would be nice to add a way for it to attack 
+                    the richest enemy. That way, it can gain control of multiple mines all at once without having to fight a bunch of goblins. (Because 
+                    goblins are just … ew.) But before I could tell my bot how to attack the richest enemy, I first needed to tell it how to find the 
+                    richest enemy. So I went to my global data, wrote a variable titled <q>richestEnemy</q>, and set that variable equal to the first item in 
+                    an array called <q>enemyBots.</q> This array contains all other players in the game, and once the variable is set to its first item, the 
+                    for loop written below it runs through the entire array to compare who has the most mines. It&rsquo;s basically saying that if a certain 
+                    enemy bot has more mines than the item the variable is currently set on, this enemy bot is now considered the richest. This process 
+                    continues until every enemy bot has been analyzed and the player with the most mines has been found. Once that&rsquo;s done, the <q>richestEnemy</q> 
+                    variable is reset to that player.
+                </p>
+                <hr>
+            </div>
+            
+            <div class="vindinium_explanation_paragraph_break">
+                <h2>If/Else if Statements (aka Bossing My Bot Around)</h2>
+                <img src = "vindinium explanation if else.png" id = "vindinium_explanation_img">
+                <p id = "vindinium_pre_image">
+                    So to keep my bot&rsquo;s priorities organized, I made a series of <q>if/else if</q> statements that provide a certain set of conditions within 
+                    parentheses as well as a task to execute if those conditions are true. They&rsquo;re basically saying, <q>If this first condition is true, 
+                    go do the &#39;if&#39;; statement&rsquo;s thing. If something else is true, go to an &#39;else if&#39;; statement and do one of those other things. And if 
+                    none of these are true, then go to the &#39;else&#39;; statement and do that last thing.</q>
+                    
+                    <br><br>A lot of these statements can be pretty simple by just using comparison operators, such as less than (&lt), greater than (>), equal to (==), 
+                    or not equal to (!=). And you can see that most of mine only rely on making simple comparisons. For example, my <q>if</q> statement says that if 
+                    my bot&rsquo;s health is less than 20, its task is to go to a tavern; if its health is more than 95, its task is to attack the nearest enemy; and 
+                    if none of these things are true, then its task is to claim any free mines. Simple, right? Well, these statements can become a lot more complex 
+                    by using something called <q>logical operators.</q> These operators help you to list multiple conditions within the parentheses and specify how many 
+                    of them should be true to run the block of code. My second <q>else if</q> statement uses the && operator and says, <q>If the richest enemy that was 
+                    defined earlier has more than 0 mines, has less health than my bot does, and is less than or equal to 6 spaces away from my bot, my bot&rsquo;s task 
+                    is to attack the richest enemy.</q>
+                </p>
+                <hr>
+            </div>
+            
+            <div class="vindinium_explanation_paragraph_break">
+                <h2>Making Tasks for My Bot</h2>
+                <img src = "vindinium explanation attack richest.png" id = "vindinium_explanation_img">
+                <p id = "vindinium_pre_image">
+                    Now that my bot knows what to do and when to do it, it needs to understand how to complete a task. An additional task that I added to the code is titled 
+                    <q>attackRichestEnemy.</q> And as the name says, this task tells the bot to attack the richest enemy. (If you couldn’t figure that out, I pray for your comprehension 
+                    skills.) To specify what this task does, I used another <q>if</q> statement that said if this task is executed, my bot is directed to that enemy in order to attack them, 
+                    and the sentence <q>I IZ ATTACKING DA RICHEST</q> is written in my console to tell me what the bot is doing. (And yeah, it&rsquo;s just a funny sentence.)
+                </p>
+                <hr>
+            </div>
+            
+            <div class="vindinium_explanation_paragraph_break">
+                <h2>What I Learned in This Project</h2>
+                <p>
+                    I guess that this project was mostly a review for me. I know that I learned about making <q>if/else if</q> statements and for loops in the last unit, 
+                    but I forgot nearly everything about them. (Good job, me.) So yeah, it was really nice having a reminder. I&rsquo;ll hopefully be able to remember everything 
+                    by the next unit. Hopefully&#8230;
+                    
+                    <br><br>Aside from all that content knowledge, I learned that teenagers are incredibly cheap with their bots. There was this one group of kids that just kept 
+                    one or two mines and spammed the taverns for the rest of the game. Like, really spammed them. And I&rsquo;m not talking about visiting them every few turns. 
+                    They literally refused to move away from the tavern. Seriously though. Why? I mean, I guess that it is a good strategy for the time being. They&rsquo;d be able 
+                    to keep collecting gold because they&rsquo;ll never die, but they&rsquo;d be pretty screwed once someone figures out how to steal mines.
+                    
+                    <br><br>I&rsquo;d like to see that happen actually. It&rsquo;ll be a huge nerd fight in the back of the classroom. Someone needs to make this happen.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

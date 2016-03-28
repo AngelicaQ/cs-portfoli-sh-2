@@ -26,10 +26,10 @@ function generateInsult(){
     
     //This variable is the random insult. It is generated through a randomizer that picks a random number 
     //between 0 and the arary's length.
-    var insultResult = insultArray[Math.floor(Math.random() * insultArray.length)];
+    var randomInsult = insultArray[Math.floor(Math.random() * insultArray.length)];
     
     //This displays the random insult on the web page.
-    display.innerHTML = insultResult;
+    display.innerHTML = randomInsult;
     
     //This calls the function.
     generateInsult();

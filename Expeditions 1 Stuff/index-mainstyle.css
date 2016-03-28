@@ -1,5 +1,6 @@
 /*The values for the h1's and body listed below are to be applied across all pages. 
 That is why it does not specify what page it belongs to.*/
+
 h1 {
 	text-transform: uppercase;
 	font-style: normal;
@@ -19,7 +20,8 @@ body{
 	padding-bottom: 40px;
 }
 
-/*The stylings for the index page begin here.*/
+/*INDEX PAGE*/
+/*--------------------------------------------------------*/
 
 #index_heading2 {
 	text-align: center;
@@ -46,7 +48,7 @@ body{
 	padding-bottom: 25px;
 }
 
-img {
+img.index{
 	width: 30%;
 	float: left;
 	margin-left: 10px;
@@ -57,6 +59,77 @@ img {
 	margin: auto;
 	text-align: center;
 }
+
+/*HTML AND CSS*/
+/*--------------------------------------------------------*/
+
+#htmlcss_heading2 {
+	text-align: center;
+	font-size: 45px;
+}
+
+#html_css_paragraph {
+	text-align: justify;
+}
+
+.htmlcss_all_information {
+	margin: auto;
+	width: 80%;
+	text-align: justify;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.HTML, .CSS, .attributes {
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.CSS, .attributes {
+	width: 70%;
+	margin: auto;
+}
+
+.history {
+	width: 50%;
+}
+
+#htmlcss_table {
+	width: 47%;
+	float: right;
+	font-size: 90%;
+	margin-left: 50px;
+	margin-top: 105px;
+}
+
+.htmlcss_td {
+	text-align: justify;
+}
+
+.htmlcss_th {
+	font-weight: bold;
+	text-align: center;
+}
+
+#htmlcss_table, .htmlcss_td, .htmlcss_th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+#berners-lee, #hakon{
+	height: 335px;
+	float: right;
+	padding-top: 15px;
+}
+
+#hakon {
+	padding-left: 60px;
+}
+
+/*INFO SITE*/
+/*--------------------------------------------------------*/
 
 #info_site_information{
 	position: absolute;
@@ -79,6 +152,9 @@ img {
 	padding-top: 10px;
 	clear: both;	
 }
+
+/*INSULT BUTTON*/
+/*--------------------------------------------------------*/
 
 /*#insultButton{
 	position: relative;
@@ -134,6 +210,75 @@ input:hover{
 	font-style: italic;
 }
 
+/*CALCULATOR*/
+/*--------------------------------------------------------*/
+
+#howTo{
+	font-size: 18px;
+	font-style: italic;
+}
+
+#dropdown{
+	width: 105px;
+}
+
+#calculator_peanuts{
+	float: right;
+	position: relative;
+	right: 100px;
+	bottom: 400px;
+}
+
+#all_calculator_info{
+	padding-top: 40px;
+	padding-left: 100px;
+	width: 400px;
+}
+
+/*VINDINIUM*/
+/*--------------------------------------------------------*/
+
+#vindinium_explanation_information{
+	text-align:justify;
+	position:absolute;
+	margin-left: 20%; 
+	margin-right: 20%;
+	padding-top: 2.5%
+}
+
+#vindinium_explanation_rulez{
+	text-align:justify;
+	width: 80%;
+	margin-left:5%;
+	font-size: 18px;
+}
+
+li{
+	padding: 11px;
+}
+
+#vindinium_explanation_knights_img{
+	float:right;
+	padding-left:2.5%;
+	padding-right:2.5%;
+	width: 35%;
+}
+
+#vindinium_explanation_img{
+	width: 70%;
+	display:block;
+	margin-left: 15%;
+	padding-bottom: 3.5%;
+	clear:both;
+}
+
+#vindinium_pre_image{
+	clear:both;
+}
+
+.vindinium_explanation_paragraph_break{
+	padding-bottom:40px;
+}
 /*The stylings for the HTML and CSS page begin here.*/
 
 

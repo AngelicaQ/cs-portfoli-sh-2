@@ -21,19 +21,18 @@ h1 {
 	font-style: italic;
 }
 
-}
 #dropdown{
 	width: 105px;
 }
 
-img{
+#calculator_peanuts{
 	float: right;
 	position: relative;
 	right: 100px;
 	bottom: 400px;
 }
 
-#all{
+#all_calculator_info{
 	padding-top: 40px;
 	padding-left: 100px;
 	width: 400px;
