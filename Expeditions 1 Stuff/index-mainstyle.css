@@ -49,6 +49,9 @@ body{
 	width: 30%;
 }
 
+#index_artists{
+	width:30%;
+}
 /*index{
 	width: 10%;
 }
@@ -167,7 +170,6 @@ body{
 #item3{
 	clear:left;
 }
-
 
 /*INSULT BUTTON*/
 /*--------------------------------------------------------*/
@@ -296,19 +298,127 @@ li{
 	padding-bottom:40px;
 }
 
-/*CREEPY FRIEND SIMULATOR*/
+/*IPHONE SIMULATOR*/
 /*--------------------------------------------------------*/
-
-/*#creepy_filler_img{
-	height:600px;
-	margin-left: 50px;
-	padding-top:20px;
-	padding-bottom:40px;
-	padding-right:40px;
-	float:left;
+#default-background{
+opacity:1;
+position:absolute;
+z-index:-3;
+width:17.5%;
+margin-left:41.2%;
+padding-top:60px;
+           }
+            
+#iphone-background1{
+   opacity:1;
+   position:absolute;
+   z-index:-2;
+   width:17.5%;
+   margin-left:41.2%;
+   padding-top:60px;
 }
 
-#creepy_name{
-	padding-top:20px;
-	
-}*/
+#rectangle{
+    opacity:0.6;
+    position:absolute;
+    background-color:gray;
+    width:17.5%;
+    height:10%;
+    margin-top:30.5%;
+    margin-left:41.3%;
+    z-index:-1;
+}
+
+#iphone-template{
+    z-index:0;
+    opacity:1;
+    width:19%;
+    margin-left:40.5%;
+    position:absolute;
+    margin-bottom:20px;
+}
+
+.apps{
+	z-index:1;
+   	position:absolute;
+   	margin-left:42.5%;
+   	width:58%;
+}
+
+.row1{
+	margin-top:12%;
+}
+
+.row4{
+	margin-top:34%;
+}
+
+#phone, #store, #safari, #music, #notes-icon{
+    width:5.5%;
+    padding-right:5px;
+    padding-bottom:15px;
+}
+
+#notes-icon{
+	margin-top:11%;
+}
+
+#textArea{
+    opacity:;
+    z-index:2;
+    position:absolute;
+    width:16.5%;
+    margin-left:41.55%;
+    margin-top:77px;
+    height:58.4%;
+    font-family:"sans-serif";
+}
+
+.app-backgrounds{
+	position:absolute;
+	z-index:4;
+	width:17%;
+	margin-left:41.5%;
+	margin-top:4.5%;
+	display:none;
+}
+
+.iphone-side-buttons{
+    position:absolute;
+    background-color:black;
+    border:none;
+    color:white;
+    text-align:center;
+    text-transform:capitalize;
+    font-family:"Josefin Sans";
+    font-size:20px;
+    width:20%;
+    height:10%;
+    margin-left:13%;
+}
+
+.iphone-side-buttons a:hover a:active{
+    background-color:gray;
+}
+
+#iphone-button-background{
+    margin-top:19%;
+}
+
+#iphone-button-phone-color{
+    margin-top:28%;
+}
+
+#homeButton{
+   height:45px;
+   width:45px;
+   margin-left:48.5%;
+   margin-top:35.3%;
+   border-radius:25px;
+   background-color:black;
+   position:absolute;
+}
+
+#homeButton a:hover a:active{
+   opacity:0.75;
+}

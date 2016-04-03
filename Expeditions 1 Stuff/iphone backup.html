@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+    	<link rel="stylesheet" type="text/css" href="index-mainstyle.css">
+    	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+    	<title>iPhone Simulator</title>
+    	
+    	<style>
+            /*Making my page fabulous.*/
+            
+            #iphone-template{
+                z-index:0;
+                opacity:1;
+                width:19%;
+                margin-left:40.5%;
+                position:absolute;
+            }
+        
+            .iphone-app-icons-row1{
+               z-index:2;
+               position:absolute;
+               margin-top:31%;
+               margin-left:42.75%;
+            }
+            
+            #notes-icon, #hangouts-icon, #music-icon, #gmail-icon, #spotify-icon{
+                width:5.5%;
+                padding-right:5px;
+            }
+            
+            #rectangle{
+                opacity:0.6;
+                position:absolute;
+                /*border:5px solid red;*/
+                background-color:gray;
+                width:17.5%;
+                height:10%;
+                margin-top:30.5%;
+                margin-left:41.3%;
+                z-index:-1;
+            }
+            
+            .iphone-side-buttons{
+                position:absolute;
+                background-color:black;
+                border:none;
+                color:white;
+                text-align:center;
+                text-transform:capitalize;
+                font-family:"Josefin Sans";
+                font-size:20px;
+                width:20%;
+                height:10%;
+                margin-left:13%;
+            }
+            
+            .iphone-side-buttons a:hover a:active{
+                background-color:gray;
+            }
+            
+            #iphone-button-background{
+                margin-top:16%;
+            }
+            
+            #iphone-button-phone-color{
+                margin-top:25%;
+            }
+           
+           #backgrounds{
+               opacity:1;
+               position:absolute;
+               z-index:-2;
+               margin-left:40%;
+               width:20%;
+           }
+           
+           #default-background{
+               opacity:1;
+               position:absolute;
+               z-index:-3;
+               width:17.5%;
+               margin-left:41.2%;
+               padding-top:60px;
+           }
+</style>
+    </head>
+    <body>
+        <h1>iPhone Simulator</h1>
+            <div id="navbar-content">
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="htmlcss.html">HTML/CSS</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="info_site.html">Info site</a></li>
+                    <li><a href="insult_generator.html">Insult</a></li>
+                    <li><a href="vindinium_explanation.html">Vindinium</a></li>
+                </ul>
+            </div>
+        
+        <img src="iphone 6 transparent black.png" alt="iPhone" id="iphone-template">
+        <img src="iphone background.png"  id="default-background" style="display: none">
+        <img src="iphone background1.png" id="iphone-background1" style="display: none">
+        <img src="iphone background2.png" id="iphone-background2" style="display: none">
+        <img src="iphone background3.png" id="iphone-background3" style="display: none">
+        
+            
+        <canvas id="rectangle" width="200" height="100"></canvas>
+        
+        <div class="iphone-app-icons-row1">
+            <img src="icons-hangouts.png" id="hangouts-icon">
+            <!--<img src="icons-music.png" id="music-icon">-->
+            <img src="icons-gmail.png" id="gmail-icon">
+            <img src="icons-notes.png" id="notes-icon">
+            <img src="icons-spotify.png" id="spotify-icon">
+        </div>
+
+        <input type="button" value="Change the Background" class="iphone-side-buttons" id="iphone-button-background">
+        <input type="button" value="Change Phone Color" class="iphone-side-buttons" id="iphone-button-phone-color" onclick="showColors()">
+        
+        <script>
+            /*function showColors(){
+            /*This is supposed to show at least two color options for the iPhone.
+            }*/
+                
+            var iphoneButtonBackground = document.getElementById("iphone-button-background");
+            var defaultbackground = document.getElementById("default-background");
+            var background1 = document.getElementById("iphone-background1");
+            var background2 = document.getElementById("iphone-background2");
+            var background3 = document.getElementById("iphone-background3");
+            
+            var backgrounds = defaultbackground;
+            
+            var backgroundArray = [
+                defaultbackground,
+                background1,
+                background2,
+                background3
+            ];
+
+            var bleh;
+            function randomBackground(){
+                bleh = backgroundArray[Math.floor(Math.random() * backgroundArray.length)];
+                backgrounds.innerHTML = bleh;
+            }
+            
+            iphoneButtonBackground.addEventListener("click", function(){
+                randomBackground();
+            });
+        </script>
+    </body>
+</html>

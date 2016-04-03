@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+    	<link rel="stylesheet" type="text/css" href="index-mainstyle.css">
+    	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+    	<title>iPhone Simulator</title>
+
+    </head>
+    <body>
+        <h1>iPhone Simulator</h1>
+            <div id="navbar-content">
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="htmlcss.html">HTML/CSS</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="info_site.html">Info site</a></li>
+                    <li><a href="insult_generator.html">Insult</a></li>
+                    <li><a href="vindinium_explanation.html">Vindinium</a></li>
+                    <li><a href="iphone_simulator.html">iPhone</a></li>
+                </ul>
+            </div>
+        
+        <img src="iphone 6 transparent black.png" alt="iPhone" id="iphone-template">
+        <img src="iphone background.png"  id="default-background" style="display: initial">
+        <img src="iphone background1.png" id="iphone-background1" style="display: none">
+        <img src="iphone background2.png" id="iphone-background2" style="display: none">
+        <img src="iphone background3.png" id="iphone-background3" style="display: none">
+        
+        <canvas id="rectangle" width="200" height="100"></canvas>
+        <canvas id = "homeButton" onclick="goHome()"></canvas>
+        
+        <div class = "apps">
+            <!--<div class="row1">
+                <img src="icons-app-store.png" id="app-icon">
+                <img src="icons-health.png" id="app-icon">
+                <img src="icons-notes.png" id="app-icon" onclick="showNotes()">
+                <img src="icons-weather.png" id="app-icon">
+            </div>
+            
+            <div class="row2">
+                <img src="icons-pages.png" id="app-icon">
+                <img src="icons-hangouts.png" id="app-icon">
+                <img src="icons-messages.png" id="app-icon">
+                <img src="icons-books.png" id="app-icon">
+            </div>
+            
+            <div class="row3">
+                <img src="icons-calculator.png" id="app-icon">
+                <img src="icons-settings.png" id="app-icon">
+                <img src="icons-spotify.png" id="app-icon">
+                <img src="icons-instagram.png" id="app-icon">
+            </div>-->
+            
+            <img src="icons-notes.png" id="notes-icon" onclick="showNotes()">
+            
+            <div class="row4">
+                <img src="icons-phone.png" id="phone" onclick="showPhone()">
+                <img src="icons-app-store.png" id="store" onclick="showStore()">
+                <img src="icons-safari.png" id="safari" onclick="showSafari()">
+                <img src="icons-music.png" id="music" onclick="showMusic()">
+            </div>
+        </div>
+        
+        <input type="button" value="Change the Background" class="iphone-side-buttons" id="iphone-button-background">
+        <input type="button" value="Change Phone Color" class="iphone-side-buttons" id="iphone-button-phone-color">
+        
+        <textarea style="display:none" id="textArea"></textarea>
+        <!--<img src="iphone-appstore.PNG" class="app-backgrounds">
+        <img src="iphone-health.PNG" class="app-backgrounds">
+        <img src="iphone-weather.PNG" class="app-backgrounds">
+        <img src="iphone-pages.PNG" class="app-backgrounds">
+        <img src="iphone-hangouts.PNG" class="app-backgrounds"> 
+        <img src="iphone-messages.png.PNG" class="app-backgrounds">
+        <img src="iphone-books.PNG" class="app-backgrounds">
+        <img src="iphone-weather.PNG" class="app-backgrounds">
+        <img src="iphone-calculator.PNG" class="app-backgrounds">
+        <img src="iphone-settings.PNG" class="app-backgrounds">-->
+        <img src="iphone-phone.PNG" class="app-backgrounds" id="phoneBackground">
+        <img src="iphone-appstore.PNG" class="app-backgrounds" id="storeBackground">
+        <img src="iphone-safari.PNG" class="app-backgrounds" id="safariBackground">
+        <img src="iphone-music.PNG" class="app-backgrounds" id="musicBackground">
+    <script src="iphone-sim.js"></script>
+    </body>
+</html>
