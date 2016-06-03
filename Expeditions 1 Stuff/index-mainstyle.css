@@ -215,7 +215,7 @@ input:hover{
 	position: absolute;
 	top: 150px;
 	text-align: justify;
-	margin-left: 17.5cm;
+	margin-left: 50%;
 	padding-right: 80px;
 	padding-top: 30px;
 }
@@ -364,14 +364,13 @@ padding-top:60px;
 }
 
 #textArea{
-    opacity:;
     z-index:2;
     position:absolute;
     width:16.5%;
     margin-left:41.55%;
     margin-top:77px;
-    height:58.4%;
-    font-family:"sans-serif";
+    height:62%;
+    font-family:"Josefin Sans";
 }
 
 .app-backgrounds{
@@ -421,4 +420,51 @@ padding-top:60px;
 
 #homeButton a:hover a:active{
    opacity:0.75;
+}
+
+/*MY OWN PERSONAL GARBAGE CAN*/
+/*--------------------------------------------------------*/
+
+#trashParagraph{
+	width:32%;
+	text-align:justify;
+	margin-left:66%;
+	font-size:18px;
+}
+
+.trashPhotos img{
+	float:left;
+	padding-right: 20px;
+	padding-bottom:20px;
+}
+
+.trashPhotos{
+	width:64%;
+	padding-left:2%;
+}
+
+#myTrashNope{
+	width:35%;
+}
+
+#myTrashDance{
+	width:25%;
+	padding-left:60px;
+}
+
+#myTrashPeridotToilet{
+	width:35%;
+}
+
+#myTrashBirdMom{
+	width:65%;
+}
+
+#myTrashBirdMomWhat{
+	width:25%;
+	padding-top:90px;
+}
+
+.trashLargerGif{
+	width:95%;
 }

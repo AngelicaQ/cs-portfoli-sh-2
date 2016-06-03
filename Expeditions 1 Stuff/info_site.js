@@ -21,7 +21,8 @@ corresponding iamge.*/
 item1.addEventListener("click", function(){
     heading.innerHTML = "<h2>The Mantis Shrimp</h2>"
     info1.innerHTML = "You see this little thing? This little tiny thing right here? This green little piece of trash and terror with the funny little eyes? Well, little buddy, it's called a mantis shrimp, and it's best known for being the physical manifestation of undersea terror and darkness. You think that I'm exaggerating, but no. No. <br /> <br />";
-    info2.innerHTML = "An average mantis shrimp has a body of about 2 to 7 inches long. That may not seem too intimidating, but some of them can grow up to be about 12 inches. In addition to that, every single one of them can punch with the force of a 22-caliber bullet. That means that, somewhere out at sea, there's a whole foot of blind fury and violence wanting to punch the living crap out of every fish in the ocean. Now imagine all of them scuttling up to you at the same time with their claws clicking and flailing through the air. That'd be hilarious and terrifying all at the same time, wouldn't it? <br /> <br />";
+    info2.innerHTML = "An average mantis shrimp has a body of about 2 to 7 inches long. That may not seem too intimidating, but some of them can grow up to be about 12 inches. In addition to that, every single one of them can punch with the force of a 22-caliber bullet. That means that, somewhere out at sea, there's a whole foot of blind fury and violence wanting to punch the life out of every fish in the ocean. <br /> <br />";
+    info3.innerHTML = "Now imagine all of them scuttling up to you at the same time with their claws clicking and flailing through the air. That'd be hilarious and terrifying all at the same time, wouldn't it?"
 });
 
 //These are facts about hornets.
